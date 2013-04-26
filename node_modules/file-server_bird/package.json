@@ -1,0 +1,11 @@
+{
+    "name": "file-server_bird",
+    "version": "0.0.1",
+    "description": "",
+    "main": "./index.js",
+    "dependencies": {
+    },
+    "author": {
+        "name": "felix"
+    }
+}
