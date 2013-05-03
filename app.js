@@ -1,9 +1,7 @@
 var fileServer = require("file-server_bird");
+var HttpTranspondBird = require("http-transpond_bird");
+var serverSettings = require("./config.js").Server;
 
-fileServer.start({
-    "basePath": "D:/workspace/peixun-shaxiang-xy/shaxiang-resource"
-}, function (req, res) {
-    res.writeHead(404, {"Content-Type": "text/plain"});
-    res.write("This request URL was not found on this server.");
-    res.end();
-});
+var httpTranspond = new HttpTranspondBird();
+
+fileServer.start(serverSettings, httpTranspond.transpond);
