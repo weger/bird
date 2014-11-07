@@ -12,8 +12,13 @@ bird
 4.  数据模拟
 
 
-配置文件说明：
+使用说明：
 -------------
+1.  将代码clone到本地
+````
+git clone https://github.com/weger/bird
+````
+2.  修改配置文件
 ````
 //静态服务器配置，可同时配置多个，域名需host到127.0.0.1
 exports.Server = {
@@ -44,4 +49,8 @@ exports.TranspondRules = {
     },
     "ajaxOnly": false
 };
+````
+3.  执行命令
+````
+node app
 ````
