@@ -24,7 +24,8 @@ git clone https://github.com/weger/bird
 exports.Server = {
     "8081": {
         //静态文件根目录
-        "basePath": "/Users/zhang/projects/webroot"
+        "basePath": "/Users/zhang/projects/webroot",
+        "debug": true,   // 是否开启调试模式，true(表示server端不缓存)，false（反之）
         //忽略的静态文件请求，与此正则匹配的请求将直接走转发规则（可选配置）
         //,"ignoreRegExp":  /\/js\/urls\.js/g
     }

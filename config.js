@@ -2,7 +2,8 @@
 exports.Server = {
     "80": {
         //静态文件根目录
-        "basePath": "D:/workspace/hrlms"
+        "basePath": "D:/workspace/hrlms",
+        "debug": true
         //忽略的静态文件请求，与此正则匹配的请求将直接走转发规则（可选配置）
         //,"ignoreRegExp":  /\/js\/urls\.js/g
     },
