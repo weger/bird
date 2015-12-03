@@ -28,7 +28,7 @@ exports.Server = {
         // 是否开启调试模式，true(表示server端不缓存)，false（反之）
         "debug": true,
         //忽略的静态文件请求，与此正则匹配的请求将直接走转发规则（可选配置）
-        //,"ignoreRegExp":  /\/js\/urls\.js/g
+        "ignoreRegExp":  /\/js\/urls\.js/g
     }
 };
 //转发规则——静态服务器没有响应的或者忽略的请求将根据一下规则转发
